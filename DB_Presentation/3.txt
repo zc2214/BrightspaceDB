@@ -1,0 +1,5 @@
+SELECT NetID, SUM(Final)
+FROM (SELECT NetID, QA_ID, Grade * Weight AS Final
+FROM Performance NATURAL JOIN QA
+WHERE Course_ID = "CSCI-UA-60") AS T
+GROUP BY NetID

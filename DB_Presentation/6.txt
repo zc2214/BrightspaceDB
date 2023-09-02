@@ -1,0 +1,6 @@
+SELECT Con_name, D_count
+FROM Content
+WHERE COURSE_ID = "CSCI-UA-60" AND D_count >=
+(SELECT MAX(D_count) As Num
+FROM Content
+WHERE COURSE_ID = "CSCI-UA-60")

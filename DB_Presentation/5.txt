@@ -1,0 +1,4 @@
+SELECT Admins.NetID, Instructors.NetID, Admins.D_name 
+FROM Admins INNER JOIN Instructors
+ON Admins.D_name = Instructors.D_name
+WHERE Admins.A_rank = "Dept Head"

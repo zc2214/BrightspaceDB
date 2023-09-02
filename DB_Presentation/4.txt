@@ -1,0 +1,6 @@
+SELECT NetID, Message, Topic, Replyto
+FROM Discussion
+WHERE COURSE_ID = "CSCI-UA-60" AND Time <
+(SELECT B_Date
+FROM QA
+WHERE COURSE_ID = "CSCI-UA-60" AND QA_name = "HW2")

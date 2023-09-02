@@ -1,0 +1,3 @@
+SELECT Email
+FROM Students NATURAL JOIN Users
+WHERE Year > 1 AND Major = "Undecided"

@@ -1,0 +1,4 @@
+SELECT Users.Lname
+FROM Users INNER JOIN Courses
+ON Users.NetID = Courses.Instructor
+WHERE Courses.Term = "F22"
